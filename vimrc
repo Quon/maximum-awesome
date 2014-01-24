@@ -50,6 +50,9 @@ if exists('$TMUX')  " Support resizing in tmux
   set ttymouse=xterm2
 endif
 
+" Dont use swp file
+set noswapfile
+
 " keyboard shortcuts
 let mapleader = ','
 map <C-h> <C-w>h
@@ -61,7 +64,7 @@ nmap <leader>a :Ack<space>
 nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
-nmap <leader>t :CtrlP<CR>
+nmap <leader>t :CtrlP .<CR>
 nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
@@ -107,6 +110,10 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
+"let tags store in local
+set tags=./tags;
+let g:easytags_dynamic_files = 1
 
 " Go crazy!
 if filereadable(expand("~/.vimrc.local"))

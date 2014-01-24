@@ -1,0 +1,8 @@
+app?	/Users/quon/proj/maximum-awesome/Rakefile	/^def app?(name)$/;"	f	language:Ruby
+app_path	/Users/quon/proj/maximum-awesome/Rakefile	/^def app_path(name)$/;"	f	language:Ruby
+brew_cask_install	/Users/quon/proj/maximum-awesome/Rakefile	/^def brew_cask_install(package, *options)$/;"	f	language:Ruby
+brew_install	/Users/quon/proj/maximum-awesome/Rakefile	/^def brew_install(package, *options)$/;"	f	language:Ruby
+get_backup_path	/Users/quon/proj/maximum-awesome/Rakefile	/^def get_backup_path(path)$/;"	f	language:Ruby
+install_github_bundle	/Users/quon/proj/maximum-awesome/Rakefile	/^def install_github_bundle(user, package)$/;"	f	language:Ruby
+link_file	/Users/quon/proj/maximum-awesome/Rakefile	/^def link_file(original_filename, symlink_filename)$/;"	f	language:Ruby
+step	/Users/quon/proj/maximum-awesome/Rakefile	/^def step(description)$/;"	f	language:Ruby
