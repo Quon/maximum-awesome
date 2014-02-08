@@ -115,6 +115,9 @@ endif
 set tags=./tags;
 let g:easytags_dynamic_files = 1
 
+"snipmate author
+let g:snips_author = 'Quon Lu'
+
 " Go crazy!
 if filereadable(expand("~/.vimrc.local"))
   " In your .vimrc.local, you might like:
