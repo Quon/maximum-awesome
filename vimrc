@@ -118,6 +118,14 @@ let g:easytags_dynamic_files = 1
 "snipmate author
 let g:snips_author = 'Quon Lu'
 
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+noremap! jj <ESC>
+
+nnoremap <F5> :GundoToggle<CR>
+
 " Go crazy!
 if filereadable(expand("~/.vimrc.local"))
   " In your .vimrc.local, you might like:
