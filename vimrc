@@ -123,6 +123,7 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 noremap! jj <ESC>
+nnoremap ; :
 
 nnoremap <F5> :GundoToggle<CR>
 
