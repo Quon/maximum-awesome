@@ -38,6 +38,8 @@
 <up>	/Users/quon/proj/maximum-awesome/vimrc	/^map <up> <nop>$/;"	m	language:Vim
 RemoveConflictingAlignMaps	/Users/Quon/proj/maximum-awesome/vimrc.local	/^command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()$/;"	c	language:Vim
 RemoveConflictingAlignMaps	/Users/Quon/proj/maximum-awesome/vimrc.local	/^function! s:RemoveConflictingAlignMaps()$/;"	f	language:Vim
+RemoveConflictingAlignMaps	/Users/quon/proj/maximum-awesome/vimrc.local	/^command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()$/;"	c	language:Vim
+RemoveConflictingAlignMaps	/Users/quon/proj/maximum-awesome/vimrc.local	/^function! s:RemoveConflictingAlignMaps()$/;"	f	language:Vim
 app?	/Users/quon/proj/maximum-awesome/Rakefile	/^def app?(name)$/;"	f	language:Ruby
 app_path	/Users/quon/proj/maximum-awesome/Rakefile	/^def app_path(name)$/;"	f	language:Ruby
 brew_cask_install	/Users/quon/proj/maximum-awesome/Rakefile	/^def brew_cask_install(package, *options)$/;"	f	language:Ruby
@@ -59,6 +61,7 @@ get_backup_path	/Users/quon/proj/maximum-awesome/Rakefile	/^def get_backup_path(
 install_github_bundle	/Users/quon/proj/maximum-awesome/Rakefile	/^def install_github_bundle(user, package)$/;"	f	language:Ruby
 jj	/Users/Quon/proj/maximum-awesome/vimrc.local	/^inoremap jj <ESC>$/;"	m	language:Vim
 jj	/Users/quon/proj/maximum-awesome/vimrc	/^noremap! jj <ESC>$/;"	m	language:Vim
+jj	/Users/quon/proj/maximum-awesome/vimrc.local	/^inoremap jj <ESC>$/;"	m	language:Vim
 link_file	/Users/quon/proj/maximum-awesome/Rakefile	/^def link_file(original_filename, symlink_filename)$/;"	f	language:Ruby
 mapleader	/Users/Quon/proj/maximum-awesome/vimrc	/^let mapleader = ','$/;"	v	language:Vim
 mapleader	/Users/quon/proj/maximum-awesome/vimrc	/^let mapleader = ','$/;"	v	language:Vim

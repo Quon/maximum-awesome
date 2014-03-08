@@ -140,3 +140,8 @@ if filereadable(expand("~/.vimrc.local"))
   " noremap! jj <ESC>
   source ~/.vimrc.local
 endif
+
+set background=dark
+colorscheme molokai
+"let g:molokai_original = 1
+
