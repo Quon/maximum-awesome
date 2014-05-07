@@ -145,3 +145,8 @@ set background=dark
 colorscheme molokai
 "let g:molokai_original = 1
 
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
