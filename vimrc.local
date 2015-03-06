@@ -27,3 +27,32 @@ function! s:RemoveConflictingAlignMaps()
 endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
+
+" Dont use swp file
+set noswapfile
+
+"let tags store in local
+set tags=./tags;
+let g:easytags_dynamic_files = 1
+
+"snipmate author
+let g:snips_author = 'Quon Lu'
+
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+noremap! jj <ESC>
+nnoremap ; :
+
+nnoremap <F5> :GundoToggle<CR>
+
+set background=dark
+colorscheme molokai
+"let g:molokai_original = 1
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+

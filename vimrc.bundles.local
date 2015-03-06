@@ -1,1 +1,7 @@
+Bundle 'vim-scripts/AutoComplPop'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
+Bundle 'wting/rust.vim'
+Bundle 'vim-scripts/renamer.vim'
+Bundle 'sjl/gundo.vim'
 Bundle 'kien/rainbow_parentheses.vim'

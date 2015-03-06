@@ -50,9 +50,6 @@ if exists('$TMUX')  " Support resizing in tmux
   set ttymouse=xterm2
 endif
 
-" Dont use swp file
-set noswapfile
-
 " keyboard shortcuts
 let mapleader = ','
 map <C-h> <C-w>h
@@ -64,7 +61,7 @@ nmap <leader>a :Ack<space>
 nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
-nmap <leader>t :CtrlP .<CR>
+nmap <leader>t :CtrlP<CR>
 nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
@@ -111,22 +108,6 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
-"let tags store in local
-set tags=./tags;
-let g:easytags_dynamic_files = 1
-
-"snipmate author
-let g:snips_author = 'Quon Lu'
-
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-noremap! jj <ESC>
-nnoremap ; :
-
-nnoremap <F5> :GundoToggle<CR>
-
 " Go crazy!
 if filereadable(expand("~/.vimrc.local"))
   " In your .vimrc.local, you might like:
@@ -140,13 +121,3 @@ if filereadable(expand("~/.vimrc.local"))
   " noremap! jj <ESC>
   source ~/.vimrc.local
 endif
-
-set background=dark
-colorscheme molokai
-"let g:molokai_original = 1
-
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-
