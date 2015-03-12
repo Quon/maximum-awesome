@@ -1,0 +1,37 @@
+snippet header
+	-- File: ${1:`expand('%:t')`}
+	-- Author: ${2:`g:snips_author`}
+	${3:-- Created at: `strftime("%B %d, %Y")`}
+	
+	local _M = {}
+	_M.__index = _M
+
+	return _M
+snippet fun
+	function ${1:new_function}(${2:args})
+	   $0
+	end
+snippet forp
+	for ${1:name},${2:val} in pairs(${3:table_name}) do
+	   $0
+	end
+snippet fori
+	for ${1:idx},${2:val} in ipairs(${3:table_name}) do
+	   $0
+	end
+snippet for 
+	for ${1:i}=${2:first},${3:last}${4/^..*/(?0:,:)/}${4:step} do
+	   $0
+	end
+snippet local
+	local ${1:x} = ${0:1}
+snippet if
+	if ${1} then
+	    ${2}
+	end
+snippet ifel
+	if ${1} then
+	    ${2}
+	else
+	    ${3}
+	end
